@@ -45,7 +45,7 @@ namespace nmct.ba.cashlessproject.api.Models
                 string sql = "INSERT INTO Products (ProductName, Price) VALUES (@name, @price);";
                 DbParameter par1 = Database.AddParameter("ConnectionString", "@name", p.ProductName);
                 DbParameter par2 = Database.AddParameter("ConnectionString", "@price", p.Price);
-                int i = Database.ModifyData("ConnectionString", sql, par1, par2);
+                Database.ModifyData("ConnectionString", sql, par1, par2);
             }
             catch (Exception ex)
             {
