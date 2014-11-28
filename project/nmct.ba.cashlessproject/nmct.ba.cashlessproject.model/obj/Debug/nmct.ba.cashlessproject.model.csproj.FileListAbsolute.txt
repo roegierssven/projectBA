@@ -1,0 +1,5 @@
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.model\bin\Debug\nmct.ba.cashlessproject.model.dll
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.model\bin\Debug\nmct.ba.cashlessproject.model.pdb
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.model\obj\Debug\nmct.ba.cashlessproject.model.csprojResolveAssemblyReference.cache
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.model\obj\Debug\nmct.ba.cashlessproject.model.dll
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.model\obj\Debug\nmct.ba.cashlessproject.model.pdb

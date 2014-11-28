@@ -34,20 +34,19 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Product Name :" Grid.Column="2" HorizontalAlignment="Center" Margin="30.5,6,10.5,6" Grid.Row="2" VerticalAlignment="Center"/>
-        <Label Content="Product Type :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
-        <Label Content="Product Type :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
-        <Label Content="Product Type :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
-        <Label Content="Product Price :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,4,13.5,5" Grid.Row="4" VerticalAlignment="Center"/>
+        <Label Content="Name :" Grid.Column="2" HorizontalAlignment="Center" Margin="30.5,6,10.5,6" Grid.Row="2" VerticalAlignment="Center"/>
+        <Label Content="Phone :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
+        <Label Content="Email :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="4" VerticalAlignment="Center"/>
+        <Label Content="Address :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="5" VerticalAlignment="Center"/>
+        
         <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="24" Margin="48.5,7,49.5,7" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
         <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
 
-        <Button Content="DELETE" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
+        <Button Content="ADD" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
         <Button Content="EDIT" Grid.Column="3" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
-        <Button Content="ADD" Grid.Column="4" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
+        <Button Content="DELETE" Grid.Column="4" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
 
 
     </Grid>

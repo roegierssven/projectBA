@@ -5,7 +5,7 @@ using System.Text;
 
 namespace nmct.ba.cashlessproject.model
 {
-    class Customers
+  public  class Customers
     {
         private int _id;
 

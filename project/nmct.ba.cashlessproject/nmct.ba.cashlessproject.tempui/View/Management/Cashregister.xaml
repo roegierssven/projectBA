@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="nmct.ba.cashlessproject.tempui.View.Management.Cashregister"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="514" d:DesignWidth="1222">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="611"/>  
+            <ColumnDefinition Width="611"/>
+        </Grid.ColumnDefinitions>
+        
+        <ListView Grid.Column="0" Margin="12">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Lastname" Width="290"></GridViewColumn>
+                    <GridViewColumn Header="Firstname" Width="295"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Grid.Column="1" Margin="12">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="CashRegister" Width="585"></GridViewColumn>
+                   
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

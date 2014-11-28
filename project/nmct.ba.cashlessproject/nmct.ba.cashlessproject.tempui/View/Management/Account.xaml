@@ -29,8 +29,8 @@
         <TextBox Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Center" Height="22" Margin="10.5,14" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="328"/>
         <TextBox Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Center" Height="22" Margin="10.5,14" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="328"/>
         <TextBox Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Center" Height="22" Margin="10.5,14" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="328"/>
-        <Button Content="Logout" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,0,10,0" Grid.Row="5" VerticalAlignment="Center" Width="154" Height="47"/>
-        <Button Content="Confirm" Grid.Column="3" HorizontalAlignment="Center" Margin="10.5,0,10,0" Grid.Row="5" VerticalAlignment="Center" Width="154" Height="47"/>
+        <!--<Button Content="Confirm" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,0,10,0" Grid.Row="5" VerticalAlignment="Center" Width="154" Height="47"/>-->
+        <Button Content="Confirm" Grid.Column="3" HorizontalAlignment="Center" Margin="10.5,8,10,8" Grid.Row="5" VerticalAlignment="Center" Width="154" Height="30"/>
 
 
     </Grid>

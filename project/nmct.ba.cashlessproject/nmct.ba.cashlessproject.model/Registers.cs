@@ -5,7 +5,7 @@ using System.Text;
 
 namespace nmct.ba.cashlessproject.model
 {
-    class Registers
+   public class Registers
     {
         private int _id;
 
@@ -31,21 +31,21 @@ namespace nmct.ba.cashlessproject.model
             set { _device = value; }
         }
 
-        private string _purchaseDate;
+        //private string _purchaseDate;
 
-        public string PurchaseDate
-        {
-            get { return _purchaseDate; }
-            set { _purchaseDate = value; }
-        }
+        //public string PurchaseDate
+        //{
+        //    get { return _purchaseDate; }
+        //    set { _purchaseDate = value; }
+        //}
 
-        private string _expiresDate;
+        //private string _expiresDate;
 
-        public string ExpiresDate
-        {
-            get { return _expiresDate; }
-            set { _expiresDate = value; }
-        }
+        //public string ExpiresDate
+        //{
+        //    get { return _expiresDate; }
+        //    set { _expiresDate = value; }
+        //}
         
         
         

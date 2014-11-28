@@ -3,8 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:nmct.ba.cashlessproject.tempui.Viewmodel"
              mc:Ignorable="d" 
              d:DesignHeight="514" d:DesignWidth="1222">
+    <UserControl.DataContext>
+        <vm:ProductsVM/>
+    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="27*"/>
@@ -25,22 +29,23 @@
             <ColumnDefinition Width="132*"/>
             <ColumnDefinition Width="26*"/>
         </Grid.ColumnDefinitions>
-        <ListView Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="26,0,0,0" Grid.Row="1" Width="768" Grid.RowSpan="7">
+        <ListView Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="26,0,0,0" Grid.Row="1" Width="768" Grid.RowSpan="7" ItemsSource="{Binding Products}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Name" Width="562" DisplayMemberBinding="{Binding ProductName}" />
+                    <GridViewColumn Header="Price" Width="200" DisplayMemberBinding="{Binding Price}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Product Name :" Grid.Column="2" HorizontalAlignment="Center" Margin="30.5,6,10.5,6" Grid.Row="2" VerticalAlignment="Center"/>
-        <Label Content="Product Type :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
+        <Label Content="Product Name :" Grid.Column="2" HorizontalAlignment="Center" Margin="30.5,6,10.5,6" Grid.Row="3" VerticalAlignment="Center"/>
+        <!--<Label Content="Product Type :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>-->
         <Label Content="Product Price :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,4,13.5,5" Grid.Row="4" VerticalAlignment="Center"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="24" Margin="48.5,7,49.5,7" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="24" Margin="48.5,7,49.5,7" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
         <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <ComboBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Margin="48.5,7,49.5,6" Grid.Row="3" VerticalAlignment="Center" Width="170"/>
-        <Button Content="DELETE" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,0,9.5,0" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
+        <!--<ComboBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Margin="48.5,7,49.5,6" Grid.Row="3" VerticalAlignment="Center" Width="170"/>-->
+        <Button Content="ADD" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,0,9.5,0" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
         <Button Content="EDIT" Grid.Column="3" HorizontalAlignment="Center" Margin="10.5,0,9.5,0" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
-        <Button Content="ADD" Grid.Column="4" HorizontalAlignment="Center" Margin="10.5,0,9.5,0" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
+        <Button Content="DELETE" Grid.Column="4" HorizontalAlignment="Center" Margin="10.5,0,9.5,0" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
 
 
     </Grid>
