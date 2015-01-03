@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.api", "nmct.ba.cashlessproject.api\nmct.ba.cashlessproject.api.csproj", "{0D2627A1-CE92-4DF3-A299-439AA6BEA0AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.ui.medewerker", "nmct.ba.cashlessproject.ui.medewerker\nmct.ba.cashlessproject.ui.medewerker.csproj", "{8F8C413A-49A1-43A1-A280-7D7B8E1962EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.ui.management", "nmct.ba.cashlessproject.ui.management\nmct.ba.cashlessproject.ui.management.csproj", "{0A9074D8-7AF0-4C96-ADC4-BF5FAB10162F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.ui.customer", "nmct.ba.cashlessproject.ui.customer\nmct.ba.cashlessproject.ui.customer.csproj", "{76D5F0E0-08D6-41B2-99FD-24E6956AD96D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{0D2627A1-CE92-4DF3-A299-439AA6BEA0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D2627A1-CE92-4DF3-A299-439AA6BEA0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D2627A1-CE92-4DF3-A299-439AA6BEA0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8C413A-49A1-43A1-A280-7D7B8E1962EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8C413A-49A1-43A1-A280-7D7B8E1962EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8C413A-49A1-43A1-A280-7D7B8E1962EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8C413A-49A1-43A1-A280-7D7B8E1962EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9074D8-7AF0-4C96-ADC4-BF5FAB10162F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9074D8-7AF0-4C96-ADC4-BF5FAB10162F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9074D8-7AF0-4C96-ADC4-BF5FAB10162F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9074D8-7AF0-4C96-ADC4-BF5FAB10162F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D5F0E0-08D6-41B2-99FD-24E6956AD96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D5F0E0-08D6-41B2-99FD-24E6956AD96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D5F0E0-08D6-41B2-99FD-24E6956AD96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D5F0E0-08D6-41B2-99FD-24E6956AD96D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

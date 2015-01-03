@@ -1,0 +1,20 @@
+﻿nmct.ba.cashlessproject.ui.management
+
+
+winexe
+C#
+.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.management\obj\Debug\
+nmct.ba.cashlessproject.ui.management
+none
+false
+DEBUG;TRACE
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.management\App.xaml
+7-1855219206
+
+21-662590781
+75319816427
+View\Management\Account.xaml;View\Management\Cashregister.xaml;View\Management\Customers.xaml;View\Management\Employees.xaml;View\Management\Managemnt.xaml;View\Management\Products.xaml;View\Management\Statistics.xaml;
+
+False
+

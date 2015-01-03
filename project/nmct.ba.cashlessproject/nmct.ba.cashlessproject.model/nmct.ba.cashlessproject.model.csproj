@@ -41,6 +41,7 @@
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registers.cs" />
+    <Compile Include="Register_Employee.cs" />
     <Compile Include="Sales.cs" />
   </ItemGroup>
   <ItemGroup>

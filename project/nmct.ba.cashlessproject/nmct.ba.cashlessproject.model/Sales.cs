@@ -5,7 +5,7 @@ using System.Text;
 
 namespace nmct.ba.cashlessproject.model
 {
-    class Sales
+   public class Sales
     {
         private int _id;
 
@@ -15,9 +15,9 @@ namespace nmct.ba.cashlessproject.model
             set { _id = value; }
         }
 
-        private int _timestamp;
+        private DateTime _timestamp;
 
-        public int Timestamp
+        public DateTime Timestamp
         {
             get { return _timestamp; }
             set { _timestamp = value; }
@@ -62,6 +62,33 @@ namespace nmct.ba.cashlessproject.model
             get { return _totalPrice; }
             set { _totalPrice = value; }
         }
+
+        private string _registerName;
+
+        public string RegisterName
+        {
+            get { return _registerName; }
+            set { _registerName = value; }
+        }
+
+        private string _productName;
+
+        public string ProductName
+        {
+            get { return _productName; }
+            set { _productName = value; }
+        }
+
+        private decimal _price;
+
+        public decimal Price
+        {
+            get { return _price; }
+            set { _price = value; }
+        }
+        
+        
+        
         
         
         

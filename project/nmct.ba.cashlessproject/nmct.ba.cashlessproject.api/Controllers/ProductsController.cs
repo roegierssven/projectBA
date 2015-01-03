@@ -23,14 +23,14 @@ namespace nmct.ba.cashlessproject.api.Controllers
             ProductsDA.AddProduct(p);
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
-        public HttpResponseMessage Put(Products p, string productname, decimal productprice )
+        public HttpResponseMessage Put(Products p)
         {
-            ProductsDA.EditProduct(p,productname,productprice);
+            ProductsDA.EditProduct(p);
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
-        public HttpResponseMessage Delete(Products p)
+        public HttpResponseMessage Delete(int id)
         {
-            ProductsDA.Remove(p);
+            ProductsDA.Remove(id);
             return new HttpResponseMessage(HttpStatusCode.OK);
         } 
     }

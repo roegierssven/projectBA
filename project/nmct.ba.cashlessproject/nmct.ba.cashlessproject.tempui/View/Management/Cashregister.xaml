@@ -3,26 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:nmct.ba.cashlessproject.tempui.Viewmodel"
              mc:Ignorable="d" 
              d:DesignHeight="514" d:DesignWidth="1222">
+    <UserControl.DataContext>
+        <vm:CashregisterVM/>
+    </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="611"/>  
             <ColumnDefinition Width="611"/>
         </Grid.ColumnDefinitions>
-        
-        <ListView Grid.Column="0" Margin="12">
+
+        <ListView Grid.Column="0" Margin="12" ItemsSource="{Binding RegisterEmployees}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Lastname" Width="290"></GridViewColumn>
-                    <GridViewColumn Header="Firstname" Width="295"></GridViewColumn>
+                    <GridViewColumn Header="Register" DisplayMemberBinding="{Binding Path=RegisterName}" Width="290"></GridViewColumn>
+                    <GridViewColumn Header="Employee" DisplayMemberBinding="{Binding Path=EmployeeName}" Width="295"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView Grid.Column="1" Margin="12">
+        <ListView Grid.Column="1" Margin="12" ItemsSource="{Binding Registers}"  SelectedItem="{Binding SelectedRegister}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="CashRegister" Width="585"></GridViewColumn>
+                    <GridViewColumn Header="CashRegister" DisplayMemberBinding="{Binding RegisterName}" Width="585"></GridViewColumn>
                    
                 </GridView>
             </ListView.View>

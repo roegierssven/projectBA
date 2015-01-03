@@ -3,8 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:vm="clr-namespace:nmct.ba.cashlessproject.tempui.Viewmodel"
              mc:Ignorable="d" 
              d:DesignHeight="514" d:DesignWidth="1222">
+    <UserControl.DataContext>
+        <vm:EmployeesVM/>
+    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="27*"/>
@@ -27,26 +31,29 @@
             <ColumnDefinition Width="132*"/>
             <ColumnDefinition Width="26*"/>
         </Grid.ColumnDefinitions>
-        <ListView Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="26,0,0,0" Grid.Row="1" Width="768" Grid.RowSpan="9">
+        <ListView Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="26,0,0,0" Grid.Row="1" Width="768" Grid.RowSpan="9" ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Name" Width="180" DisplayMemberBinding="{Binding EmployeeName}" />
+                    <GridViewColumn Header="Address" Width="221" DisplayMemberBinding="{Binding Address}"/>
+                    <GridViewColumn Header="Email" Width="180" DisplayMemberBinding="{Binding Email}" />
+                    <GridViewColumn Header="Phone" Width="180" DisplayMemberBinding="{Binding Phone}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <Label Content="Name :" Grid.Column="2" HorizontalAlignment="Center" Margin="30.5,6,10.5,6" Grid.Row="2" VerticalAlignment="Center"/>
-        <Label Content="Phone :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
+        <Label Content="Phone :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="5" VerticalAlignment="Center"/>
         <Label Content="Email :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="4" VerticalAlignment="Center"/>
-        <Label Content="Address :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="5" VerticalAlignment="Center"/>
-        
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="24" Margin="48.5,7,49.5,7" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
-        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="170"/>
+        <Label Content="Address :" Grid.Column="2" HorizontalAlignment="Center" Margin="34.5,5,13.5,4" Grid.Row="3" VerticalAlignment="Center"/>
 
-        <Button Content="ADD" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
-        <Button Content="EDIT" Grid.Column="3" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
-        <Button Content="DELETE" Grid.Column="4" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="24" Margin="48.5,7,49.5,7" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="170" Text="{Binding EmployeeName, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Width="170" Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="170" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Center" Height="23" Margin="48.5,6,49.5,6" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="170" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Button Content="ADD" Grid.Column="2" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37" Command="{Binding AddEmployeeCommand}"/>
+        <Button Content="EDIT" Grid.Column="3" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37" Command="{Binding SaveEmployeeCommand}"/>
+        <Button Content="DELETE" Grid.Column="4" HorizontalAlignment="Center" Margin="10.5,3,9.5,3" Grid.Row="6" VerticalAlignment="Center" Width="114" Height="37" Command="{Binding DeleteEmployeeCommand}"/>
 
 
     </Grid>

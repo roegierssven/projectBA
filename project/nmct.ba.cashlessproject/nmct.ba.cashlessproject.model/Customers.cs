@@ -31,9 +31,9 @@ namespace nmct.ba.cashlessproject.model
             set { _address = value; }
         }
 
-        private string _picture;
+        private byte[] _picture;
 
-        public string Picture
+        public byte[] Picture
         {
             get { return _picture; }
             set { _picture = value; }

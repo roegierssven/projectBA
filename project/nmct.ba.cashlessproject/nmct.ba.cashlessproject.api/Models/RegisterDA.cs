@@ -26,6 +26,21 @@ namespace nmct.ba.cashlessproject.api.Models
             return list;
         }
 
+        public static Registers GetRegister(int id)
+        {
+            string sql = "SELECT ID, RegisterName, Device FROM Registers WHERE ID=@ID";
+            DbParameter par1 = Database.AddParameter("ConnectionString", "@ID", id);
+            DbDataReader reader = Database.GetData("ConnectionString", sql, par1);
+            Registers result = null;
+
+            while (reader.Read())
+            {
+                result = Create(reader);
+            }
+            reader.Close();
+            return result;
+        }
+
         private static Registers Create(IDataRecord record)
         {
             return new Registers()

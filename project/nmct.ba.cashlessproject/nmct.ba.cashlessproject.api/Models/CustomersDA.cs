@@ -28,22 +28,27 @@ namespace nmct.ba.cashlessproject.api.Models
 
         private static Customers Create(IDataRecord record)
         {
+            byte[] bytes = null;
+            if (record["Picture"] != null && record["Picture"] != DBNull.Value && record["Picture"] is byte[])
+            {
+                bytes = (byte[])record["Picture"];
+            }
             return new Customers()
             {
                 ID = Int32.Parse(record["ID"].ToString()),
                 CustomerName = record["CustomerName"].ToString(),
                 Address = record["Address"].ToString(),
-                Picture = record["Picture"].ToString(),
+                Picture = bytes,
                 Balance = decimal.Parse(record["Balance"].ToString())
             };
         }
 
-        public static void EditBalance(Customers c, decimal balance)
+        public static void EditBalance(Customers c)
         {
             try
             {
                 string sql = "UPDATE Customers SET Balance=@balance WHERE ID=@id";
-                DbParameter par1 = Database.AddParameter("ConnectionString", "@balance", balance);
+                DbParameter par1 = Database.AddParameter("ConnectionString", "@balance", c.Balance);
                 DbParameter par2 = Database.AddParameter("ConnectionString", "@id", c.ID);
                 Database.ModifyData("ConnectionString", sql, par1, par2);
 

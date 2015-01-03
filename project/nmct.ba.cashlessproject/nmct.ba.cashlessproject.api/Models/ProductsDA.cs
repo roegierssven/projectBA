@@ -45,7 +45,7 @@ namespace nmct.ba.cashlessproject.api.Models
                 string sql = "INSERT INTO Products (ProductName, Price) VALUES (@name, @price);";
                 DbParameter par1 = Database.AddParameter("ConnectionString", "@name", p.ProductName);
                 DbParameter par2 = Database.AddParameter("ConnectionString", "@price", p.Price);
-                Database.ModifyData("ConnectionString", sql, par1, par2);
+                Database.InsertData("ConnectionString", sql, par1, par2);
             }
             catch (Exception ex)
             {
@@ -53,12 +53,12 @@ namespace nmct.ba.cashlessproject.api.Models
                 Console.WriteLine(ex.Message);
             }
         }
-        public static void Remove(Products p)
+        public static void Remove(int id)
         {
             try
             {
                 string sql = "DELETE FROM Products WHERE ID=@id";
-                DbParameter par1 = Database.AddParameter("ConnectionString", "@id", p.ID);
+                DbParameter par1 = Database.AddParameter("ConnectionString", "@id", id);
                 Database.ModifyData("ConnectionString", sql, par1);
 
             }
@@ -69,13 +69,13 @@ namespace nmct.ba.cashlessproject.api.Models
             }
         }
 
-        public static void EditProduct(Products p, string productname, decimal productprice)
+        public static void EditProduct(Products p)
         {
             try
             {
                 string sql = "UPDATE Products SET ProductName=@productname, Price=@productprice WHERE ID=@id";
-                DbParameter par1 = Database.AddParameter("ConnectionString", "@productname", productname);
-                DbParameter par2 = Database.AddParameter("ConnectionString", "@productprice", productprice);
+                DbParameter par1 = Database.AddParameter("ConnectionString", "@productname", p.ProductName);
+                DbParameter par2 = Database.AddParameter("ConnectionString", "@productprice", p.Price);
                 DbParameter par3 = Database.AddParameter("ConnectionString", "@id", p.ID);
                 Database.ModifyData("ConnectionString", sql, par1, par2, par3);
 
