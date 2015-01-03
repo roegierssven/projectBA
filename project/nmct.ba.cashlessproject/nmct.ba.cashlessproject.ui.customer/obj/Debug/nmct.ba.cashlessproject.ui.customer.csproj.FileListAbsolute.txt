@@ -27,3 +27,7 @@ C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer.csproj.GenerateResource.Cache
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer.exe
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer.pdb
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer.csprojResolveAssemblyReference.cache
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\CustomerManagment.baml
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\CustomerManagment.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer.g.resources

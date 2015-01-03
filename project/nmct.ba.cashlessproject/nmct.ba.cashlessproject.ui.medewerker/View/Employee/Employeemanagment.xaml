@@ -1,48 +1,23 @@
 ﻿<Window x:Class="nmct.ba.cashlessproject.ui.medewerker.View.Employee.Employeemanagment"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:nmct.ba.cashlessproject.ui.medewerker.ViewModel"
+        xmlns:v="clr-namespace:nmct.ba.cashlessproject.ui.medewerker.View.Employee"
         Title="Employeemanagment" Height="720" Width="1280">
+
+    <Window.DataContext>
+        <vm:ApplicationVM/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:LoginVM}">
+            <v:Login/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:OrderVM}">
+            <v:Order/>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="107.201"/>
-            <ColumnDefinition Width="592.799"/>
-            <ColumnDefinition Width="192.276"/>
-            <ColumnDefinition Width="387.724"/>
-
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="490"/>
-            <RowDefinition Height="52"/>
-            <RowDefinition Height="49.91"/>
-            <RowDefinition Height="50.09"/>
-
-        </Grid.RowDefinitions>
-
-        <Label Content="EMPLOYEE :" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="17,12,17,13" Height="26" Width="73" />
-        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" Text="/EMPLOYEE/" Margin="8,18,0,17" Height="16" Width="66"/>
-
-        <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="10"></ItemsControl>
-
-        <Label Content="COSTUMER :" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26" Margin="58,12,57.5,13" Width="77" />
-        <TextBlock Text="/COSTUMER/" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="7.5,18,0,17" Height="16" Width="72"/>
-
-        <ListView Grid.Column="2" Grid.Row="1" Margin="8" Grid.ColumnSpan="2">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Product" Width="250"/>
-                    <GridViewColumn Header="Amount" Width="160"/>
-                    <GridViewColumn Header="Price" Width="150"/>
-                </GridView>
-            </ListView.View>
-
-        </ListView>
-        
-        <Label Content="BALANCE :" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
-        <TextBlock Text="/BALANCE/" HorizontalAlignment="Left" Margin="8" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
-        <Label Content="NEW BALANCE :" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
-        <TextBlock Text="/NEW BALANCE/" HorizontalAlignment="Left" Margin="8" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
-        <Button Content="CONFIRM" Grid.Row="4" Grid.Column="3" Margin="8"/>
-
+        <ContentControl Content="{Binding CurrentPage}" />
     </Grid>
+
 </Window>

@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="beid35libCS, Version=3.5.3.6193, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Belgium Identity Card SDK\beidlib\dotNet\bin\beid35libCS.dll</HintPath>
+    </Reference>
     <Reference Include="GalaSoft.MvvmLight">
       <HintPath>..\packages\MvvmLightLibs.5.0.2.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
     </Reference>
@@ -86,9 +90,17 @@
     </Compile>
     <Compile Include="ViewModel\ApplicationVM.cs" />
     <Compile Include="ViewModel\IPage.cs" />
+    <Compile Include="ViewModel\LoginVM.cs" />
     <Compile Include="ViewModel\ObservableObject.cs" />
+    <Compile Include="ViewModel\OrderVM.cs" />
     <Compile Include="View\Employee\Employeemanagment.xaml.cs">
       <DependentUpon>Employeemanagment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\Order.xaml.cs">
+      <DependentUpon>Order.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -119,11 +131,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\nmct.ba.cashlessproject.model\nmct.ba.cashlessproject.model.csproj">
+      <Project>{e2744291-ed23-45af-ba70-143a372362c6}</Project>
+      <Name>nmct.ba.cashlessproject.model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="View\Employee\Employeemanagment.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Employee\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Employee\Order.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

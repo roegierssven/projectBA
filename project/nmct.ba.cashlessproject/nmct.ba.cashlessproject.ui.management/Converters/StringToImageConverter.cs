@@ -18,12 +18,12 @@ namespace nmct.ba.cashlessproject.ui.management.Converters
             {
                 byte[] input = (byte[])value;
                 if (input.Length <= 1)
-                    return new BitmapImage(new Uri(@"pack://application:,,,/nmct.ba.cashlessproject;component/View/Images/noimage.png"));
+                    return new BitmapImage(new Uri(@"pack://application:,,,/nmct.ba.cashlessproject.ui.management;component/Images/noimage.png"));
                 else
                     return BitmapImageFromBytes(input);
             }
             else
-                return new BitmapImage(new Uri(@"pack://application:,,,/nmct.ba.cashlessproject;component/View/Images/noimage.png"));
+                return new BitmapImage(new Uri(@"pack://application:,,,/nmct.ba.cashlessproject.ui.management;component/Images/noimage.png"));
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

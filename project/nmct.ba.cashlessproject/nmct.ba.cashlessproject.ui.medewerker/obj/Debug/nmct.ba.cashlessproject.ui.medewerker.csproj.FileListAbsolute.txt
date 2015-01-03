@@ -28,3 +28,17 @@ C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\nmct.ba.cashlessproject.ui.medewerker.csproj.GenerateResource.Cache
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\nmct.ba.cashlessproject.ui.medewerker.exe
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\nmct.ba.cashlessproject.ui.medewerker.pdb
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\View\Employee\Order.baml
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\View\Employee\Login.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\View\Employee\Order.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\nmct.ba.cashlessproject.ui.medewerker_MarkupCompile.lref
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\App.baml
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\bin\Debug\nmct.ba.cashlessproject.model.dll
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\bin\Debug\nmct.ba.cashlessproject.model.pdb
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\View\Employee\Employeemanagment.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\View\Employee\Employeemanagment.baml
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\View\Employee\Login.baml
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\obj\Debug\nmct.ba.cashlessproject.ui.medewerker.g.resources
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\bin\Debug\beid35libCS.dll
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.medewerker\bin\Debug\beid35libCS.xml

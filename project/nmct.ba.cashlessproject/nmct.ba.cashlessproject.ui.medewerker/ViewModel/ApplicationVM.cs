@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,27 +13,39 @@ namespace nmct.ba.cashlessproject.ui.medewerker.ViewModel
     {
         public ApplicationVM()
         {
-            
-            // Add other pages
+            _pages = new ObservableCollection<IPage>();
+            _pages.Add(new LoginVM());
+            _currentPage = Pages[0];
 
-            CurrentPage = Pages[0];
+
         }
 
-        private object currentPage;
-        public object CurrentPage
-        {
-            get { return currentPage; }
-            set { currentPage = value; OnPropertyChanged("CurrentPage"); }
-        }
-
-        private List<IPage> pages;
-        public List<IPage> Pages
+        private IPage _currentPage;
+        public IPage CurrentPage
         {
             get
             {
-                if (pages == null)
-                    pages = new List<IPage>();
-                return pages;
+                return _currentPage;
+            }
+            set
+            {
+                _currentPage = value;
+                OnPropertyChanged("CurrentPage");
+            }
+
+        }
+
+        private ObservableCollection<IPage> _pages;
+        public ObservableCollection<IPage> Pages
+        {
+            get
+            {
+                return _pages;
+            }
+            set
+            {
+                _pages = value;
+                OnPropertyChanged("Pages");
             }
         }
 
@@ -41,9 +54,10 @@ namespace nmct.ba.cashlessproject.ui.medewerker.ViewModel
             get { return new RelayCommand<IPage>(ChangePage); }
         }
 
-        private void ChangePage(IPage page)
+        public void ChangePage(IPage page)
         {
             CurrentPage = page;
         }
+
     }
 }
