@@ -22,7 +22,7 @@ namespace nmct.ba.cashlessproject.ui.medewerker.ViewModel
             get { return "Order"; }
         }
 
-        int registerID = 4;
+        int registerID = 2;
         string mname = "OrderVM";
 
         public OrderVM()
@@ -149,9 +149,20 @@ namespace nmct.ba.cashlessproject.ui.medewerker.ViewModel
             get { return _total; }
             set {
                 _total = value;
-                OnPropertyChanged("Totaal");
+                OnPropertyChanged("Total");
             }
         }
+
+        private decimal _newBalance;
+
+        public decimal NewBalance
+        {
+            get { return _newBalance; }
+            set { _newBalance = value;
+            OnPropertyChanged("NewBalance");
+            }
+        }
+        
 
         private Customers _customer;
         public Customers Customer
@@ -238,6 +249,7 @@ namespace nmct.ba.cashlessproject.ui.medewerker.ViewModel
                 Sales.Add(s);
                 CalculateTotal();
                 CheckPrice();
+                CalculateNewBalance();
 
                 Amount = 1;
                 SelectedProduct = null;
@@ -268,6 +280,13 @@ namespace nmct.ba.cashlessproject.ui.medewerker.ViewModel
 
             foreach (Sales s in Sales)
                 Total += s.TotalPrice;
+        }
+
+        void CalculateNewBalance()
+        {
+            decimal b = Customer.Balance;
+            
+            NewBalance = b - Total;
         }
 
         

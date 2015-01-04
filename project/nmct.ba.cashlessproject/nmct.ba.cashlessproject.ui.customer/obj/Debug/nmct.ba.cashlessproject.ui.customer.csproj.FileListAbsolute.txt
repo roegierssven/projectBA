@@ -31,3 +31,12 @@ C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\CustomerManagment.baml
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\CustomerManagment.g.cs
 C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer.g.resources
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\Topup.baml
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\Login.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\Topup.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\nmct.ba.cashlessproject.ui.customer_MarkupCompile.lref
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\bin\Debug\beid35libCS.dll
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\bin\Debug\nmct.ba.cashlessproject.model.dll
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\bin\Debug\nmct.ba.cashlessproject.model.pdb
+C:\Users\Sven Roegiers\Documents\school\BA\project\nmct.ba.cashlessproject\nmct.ba.cashlessproject.ui.customer\obj\Debug\View\Customer\Login.baml

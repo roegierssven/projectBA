@@ -5,7 +5,7 @@ using System.Text;
 
 namespace nmct.ba.cashlessproject.model
 {
-  public  class Customers
+  public class Customers
     {
         private int _id;
 
@@ -32,7 +32,6 @@ namespace nmct.ba.cashlessproject.model
         }
 
         private byte[] _picture;
-
         public byte[] Picture
         {
             get { return _picture; }

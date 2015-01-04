@@ -10,7 +10,7 @@ using System.Data;
 namespace nmct.ba.cashlessproject.api.Models
 {
     public class SaleDA
-    {
+    { 
         public static List<Sales> GetSales()
         {
             List<Sales> list = new List<Sales>();
@@ -27,8 +27,7 @@ namespace nmct.ba.cashlessproject.api.Models
             return list;
         }
 
-        
-        public static void AddSale(Sales s)
+        public static void InsertSale(Sales s)
         {
             string sql = "INSERT INTO Sales VALUES(@Timestamp, @CustomerID, @RegisterID, @RegisterName, @ProductID, @ProductName, @Amount, @Price, @TotalPrice)";
             DbParameter par1 = Database.AddParameter("ConnectionString", "@Timestamp", DateTimeToUnixTimeStamp(s.Timestamp));
@@ -44,7 +43,6 @@ namespace nmct.ba.cashlessproject.api.Models
             Database.InsertData("ConnectionString", sql, par1, par2, par3, par4, par5, par6, par7, par8, par9);
         }
 
-        
         private static Sales Create(IDataRecord record)
         {
             return new Sales()

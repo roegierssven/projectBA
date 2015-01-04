@@ -18,7 +18,7 @@ namespace nmct.ba.cashlessproject.api.Controllers
 
         public HttpResponseMessage Post(Sales s)
         {
-            SaleDA.AddSale(s);
+            SaleDA.InsertSale(s);
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }

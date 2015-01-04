@@ -3,143 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="View/Employee/Employeemanagment.xaml">
     <Application.Resources>
-        <!-- COLORS -->
-        <SolidColorBrush x:Key="ButtonActiveColor" Color="LightSkyBlue" />
-        <!-- STANDARD STYLE -->
-        <Style x:Key="StandardStyle" TargetType="Control">
-            <Setter Property="FontSize" Value="22" />
-            <Setter Property="VerticalAlignment" Value="Stretch" />
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="Margin" Value="10" />
-        </Style>
-        <!-- STYLES -->
-        <!-- textblock -->
-        <Style x:Key="TextBlockTitleStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="48" />
-            <Setter Property="VerticalAlignment" Value="Bottom" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-        </Style>
-        <Style x:Key="TextBlockDetailStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Margin" Value="7" />
-        </Style>
-        <Style x:Key="TextBlockStyleTotaal" BasedOn="{StaticResource TextBlockDetailStyle}" TargetType="TextBlock">
-            <Setter Property="Margin" Value="0" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-        </Style>
-        <Style x:Key="TextBlockBestellingStyle" BasedOn="{StaticResource TextBlockTitleStyle}" TargetType="TextBlock">
+ 
+        <Style x:Key="OrderStyle"  TargetType="TextBlock">
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="Background" Value="#c1c0c0" />
             <Setter Property="Padding" Value="10" />
             <Setter Property="Width" Value="150" />
             <Setter Property="TextAlignment" Value="Center" />
-        </Style>
-        <!-- textbox -->
-        <Style x:Key="TextboxStyle" BasedOn="{StaticResource StandardStyle}" TargetType="TextBox">
-            <Setter Property="FontSize" Value="22" />
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Margin" Value="7" />
-        </Style>
-        <!-- label-->
-        <Style x:Key="LabelStyleLogin" BasedOn="{StaticResource StandardStyle}" TargetType="Label">
-            <Setter Property="FontSize" Value="24" />
-            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Bottom" />
             <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="Margin" Value="5" />
         </Style>
-        <Style x:Key="LabelGebruikersnaam" BasedOn="{StaticResource LabelStyleLogin}" TargetType="Label">
-            <Setter Property="FontSize" Value="12" />
-            <Setter Property="HorizontalAlignment" Value="Right" />
-            <Setter Property="Margin" Value="0,0,5,0" />
-        </Style>
-        <Style x:Key="LabelStyleIngelogd" BasedOn="{StaticResource LabelStyleLogin}" TargetType="Label">
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="HorizontalAlignment" Value="Left" />
-        </Style>
-        <Style x:Key="LabelStyleTitel" BasedOn="{StaticResource LabelStyleIngelogd}" TargetType="Label">
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="Margin" Value="0, 0, 0, 10" />
-            <Setter Property="FontSize" Value="24" />
-            <Setter Property="FontWeight" Value="Medium" />
-        </Style>
-        <Style x:Key="LabelStyleTotaal" BasedOn="{StaticResource LabelStyleTitel}" TargetType="Label">
-            <Setter Property="Margin" Value="0" />
-        </Style>
-        <Style x:Key="LabelStyleTotaalLinks" BasedOn="{StaticResource LabelStyleTotaal}" TargetType="Label">
-            <Setter Property="HorizontalAlignment" Value="Left" />
-            <Setter Property="Margin" Value="10, 0, 0, 0" />
-        </Style>
-        <Style x:Key="LabelStyleBedragen" BasedOn="{StaticResource LabelStyleTotaal}" TargetType="Label">
-            <Setter Property="FontSize" Value="22" />
-        </Style>
-        <Style x:Key="LabelStyleLoginKlant" BasedOn="{StaticResource LabelStyleTitel}" TargetType="Label">
-            <Setter Property="FontSize" Value="48" />
-        </Style>
-        <Style x:Key="LabelStyleOpladen" BasedOn="{StaticResource LabelStyleTotaal}" TargetType="Label">
-            <Setter Property="FontSize" Value="22" />
-        </Style>
-        <Style x:Key="LabelMaxBedrag" BasedOn="{StaticResource LabelGebruikersnaam}" TargetType="Label">
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="Margin" Value="3" />
-        </Style>
-        <!-- button -->
-        <Style x:Key="ButtonStyle" BasedOn="{StaticResource StandardStyle}" TargetType="Button">
-            <Setter Property="Margin" Value="10" />
-        </Style>
-        <Style x:Key="ButtonMenuStyle" BasedOn="{StaticResource StandardStyle}" TargetType="Button">
-            <Setter Property="Margin" Value="10, 10, 9, 10" />
-            <Setter Property="Width" Value="162" />
-        </Style>
-        <Style x:Key="ButtonStyleActive" BasedOn="{StaticResource ButtonStyle}" TargetType="Button">
-            <Setter Property="Background" Value="{StaticResource ButtonActiveColor}" />
-        </Style>
-        <Style x:Key="ButtonStyleMidden" BasedOn="{StaticResource ButtonStyle}" TargetType="Button">
-            <Setter Property="Margin" Value="0, 10" />
-        </Style>
-        <Style x:Key="ButtonStyleBestelling" BasedOn="{StaticResource ButtonStyle}" TargetType="Button">
-            <Setter Property="Padding" Value="10"/>
-        </Style>
-        <!-- listbox -->
-        <Style x:Key="ListboxStyleLinks" TargetType="ListBox">
-            <Setter Property="Margin" Value="10, 5, 0, 10" />
-        </Style>
-        <Style x:Key="ListboxStyleRechts" TargetType="ListBox">
-            <Setter Property="Margin" Value="0, 5, 10, 10" />
-        </Style>
-        <Style x:Key="ListGridViewColumnHeaderStyle" TargetType="GridViewColumnHeader">
-            <Setter Property="FontSize" Value="18" />
-        </Style>
-        <Style x:Key="ListboxStyleMetTitelLinks" TargetType="ListBox">
-            <Setter Property="Margin" Value="10, 50, 0, 10" />
-        </Style>
-        <Style x:Key="ListboxStyleMetTitelRechts" TargetType="ListBox">
-            <Setter Property="Margin" Value="0, 50, 10, 10" />
-        </Style>
-        <!-- stackpanel -->
-        <Style x:Key="StackPanelStyle" TargetType="StackPanel">
-            <Setter Property="Margin" Value="0, 5, 10, 10" />
-        </Style>
-        <Style x:Key="StackPanelStyleMetTitel" TargetType="StackPanel" BasedOn="{StaticResource StackPanelStyle}">
-            <Setter Property="Margin" Value="0, 50, 10, 10" />
-        </Style>
-        <Style x:Key="StackPanelStyleMetTitelLinks" TargetType="StackPanel" BasedOn="{StaticResource StackPanelStyle}">
-            <Setter Property="Margin" Value="10, 50, 0, 50" />
-        </Style>
-        <!-- combobox -->
-        <Style x:Key="ComboboxStyle" TargetType="ComboBox">
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="Margin" Value="7" />
-        </Style>
-        <!-- image -->
-        <Style x:Key="ImageStyle" TargetType="Image">
-            <Setter Property="Margin" Value="5" />
-        </Style>
-        <!-- itemscontrol -->
-        <Style x:Key="ItemsControlStyle" TargetType="ItemsControl">
-            <Setter Property="Margin" Value="10" />
-        </Style>
-        <!-- border -->
+
         <Style x:Key="BorderStyle" TargetType="Border">
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="BorderBrush" Value="DarkGray"/>

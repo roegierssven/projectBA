@@ -48,8 +48,7 @@ namespace nmct.ba.cashlessproject.api.Models
                 ID = Int32.Parse(record["ID"].ToString()),
                 RegisterName = record["RegisterName"].ToString(),
                 Device = record["Device"].ToString(),
-                //ExpiresDate = "01/03",
-                //PurchaseDate = "02/06"
+                
             };
         }
     }

@@ -28,7 +28,6 @@ namespace nmct.ba.cashlessproject.model.Organisation
             set { _device = value; }
         }
 
-        //unix timestamp
         private int _purchaseDate;
         public int PurchaseDate
         {
@@ -36,7 +35,6 @@ namespace nmct.ba.cashlessproject.model.Organisation
             set { _purchaseDate = value; }
         }
 
-        //unix timestamp
         private int _expiresDate;
         public int ExpiresDate
         {

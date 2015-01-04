@@ -17,7 +17,7 @@
         </ItemsPanelTemplate>
         <DataTemplate x:Key="ProductsTemplate">
             <Border Style="{StaticResource BorderStyle}">
-                <TextBlock Text="{Binding ProductName}" Style="{StaticResource TextBlockBestellingStyle}"/>
+                <TextBlock Text="{Binding ProductName}" Style="{StaticResource OrderStyle}"/>
             </Border>
         </DataTemplate>
     </UserControl.Resources>
@@ -38,7 +38,7 @@
 
         </Grid.RowDefinitions>
 
-        <ListBox x:Name="lbProducts" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedProduct}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10" ItemsSource="{Binding Products}" Style="{StaticResource ListboxStyleRechts}" ItemsPanel="{StaticResource PanelTemplate}" ItemTemplate="{StaticResource ProductsTemplate}">
+        <ListBox x:Name="lbProducts" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedProduct}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10" ItemsSource="{Binding Products}" ItemsPanel="{StaticResource PanelTemplate}" ItemTemplate="{StaticResource ProductsTemplate}">
         </ListBox>
 
 
@@ -59,8 +59,8 @@
         <Label Content="BALANCE :" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2"/>
         <TextBlock Text="{Binding Customer.Balance}" HorizontalAlignment="Left" Margin="8" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"/>
         <Label Content="NEW BALANCE :" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2"/>
-        <TextBlock Text="/NEW BALANCE/" HorizontalAlignment="Left" Margin="8" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
-        <Button Content="CONFIRM" Grid.Row="4" Grid.Column="3" Margin="8"/>
+        <TextBlock Text="{Binding NewBalance}" HorizontalAlignment="Left" Margin="8" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"/>
+        <Button Content="CONFIRM" Grid.Row="4" Grid.Column="3" Margin="8" Command="{Binding InsertIntoDBCommand}"/>
         <TextBlock HorizontalAlignment="Left" Margin="17,23,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding SelectedProduct.ProductName}" VerticalAlignment="Top" Height="16" Width="90"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="5,22,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="163" Text="{Binding Amount}"/>
         <Button Content="+" Grid.Column="1" HorizontalAlignment="Left" Margin="194,13,0,0" Grid.Row="2" VerticalAlignment="Top" Width="46" Height="39" Command="{Binding PlusCommand}"/>

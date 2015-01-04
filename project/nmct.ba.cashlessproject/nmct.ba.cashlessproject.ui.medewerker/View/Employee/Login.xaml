@@ -11,9 +11,9 @@
     </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="279" />
+            <ColumnDefinition Width="121" />
             <ColumnDefinition Width="440" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -23,9 +23,9 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="80" />
         </Grid.RowDefinitions>
-        <Label Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" >EmployeeID:</Label>
-        <TextBox Grid.Row="1" Grid.Column="3" x:Name="txtEmployeeID"  Text="{Binding EmployeeID}"/>
-        <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
+        <Label VerticalAlignment="Center" Height="26" Margin="369,77,229,157" Grid.ColumnSpan="2" Grid.RowSpan="2" >EmployeeID:</Label>
+        <TextBox Grid.Column="1" x:Name="txtEmployeeID"  Text="{Binding EmployeeID}" Margin="50,77,9,158" Grid.RowSpan="2"/>
+        <Grid Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="4" Margin="369,100,350,80">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -37,18 +37,18 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="3" Grid.Column="2" x:Name="btnDel" Command="{Binding DeleteCommand}">Delete</Button>
-            <Button Grid.Row="3" Grid.Column="1" x:Name="btnNul" Command="{Binding Add0Command}">0</Button>
+            <Button Grid.Row="3" Grid.Column="2"  Command="{Binding DeleteCommand}">Delete</Button>
+            <Button Grid.Row="3" Grid.Column="1"  Command="{Binding Add0Command}">0</Button>
             <Button Grid.Row="2" x:Name="btnEen" Command="{Binding Add1Command}">1</Button>
-            <Button Grid.Row="2" Grid.Column="1" x:Name="btnTwee" Command="{Binding Add2Command}">2</Button>
-            <Button Grid.Row="2" Grid.Column="2" x:Name="btnDrie" Command="{Binding Add3Command}">3</Button>
+            <Button Grid.Row="2" Grid.Column="1"  Command="{Binding Add2Command}">2</Button>
+            <Button Grid.Row="2" Grid.Column="2"  Command="{Binding Add3Command}">3</Button>
             <Button Grid.Row="1" x:Name="btnVier" Command="{Binding Add4Command}">4</Button>
-            <Button Grid.Row="1" Grid.Column="1" x:Name="btnVijf" Command="{Binding Add5Command}">5</Button>
-            <Button Grid.Row="1" Grid.Column="2" x:Name="btnZes" Command="{Binding Add6Command}">6</Button>
-            <Button x:Name="btnZeven" Command="{Binding Add7Command}">7</Button>
-            <Button Grid.Column="1" x:Name="btnAcht" Command="{Binding Add8Command}">8</Button>
-            <Button Grid.Column="2" x:Name="btnNegen" Command="{Binding Add9Command}">9</Button>
+            <Button Grid.Row="1" Grid.Column="1" Command="{Binding Add5Command}">5</Button>
+            <Button Grid.Row="1" Grid.Column="2" Command="{Binding Add6Command}">6</Button>
+            <Button  Command="{Binding Add7Command}">7</Button>
+            <Button Grid.Column="1"  Command="{Binding Add8Command}">8</Button>
+            <Button Grid.Column="2"  Command="{Binding Add9Command}">9</Button>
         </Grid>
-        <Button Grid.Row="4" Grid.Column="3" x:Name="btnLogin" Command="{Binding LoginCommand}">Login</Button>
+        <Button Grid.Row="4" Grid.Column="1" Command="{Binding LoginCommand}" Grid.ColumnSpan="3" Margin="116,0,350,28">Login</Button>
     </Grid>
 </UserControl>

@@ -30,22 +30,6 @@ namespace nmct.ba.cashlessproject.model
             get { return _device; }
             set { _device = value; }
         }
-
-        //private string _purchaseDate;
-
-        //public string PurchaseDate
-        //{
-        //    get { return _purchaseDate; }
-        //    set { _purchaseDate = value; }
-        //}
-
-        //private string _expiresDate;
-
-        //public string ExpiresDate
-        //{
-        //    get { return _expiresDate; }
-        //    set { _expiresDate = value; }
-        //}
         
         
         
