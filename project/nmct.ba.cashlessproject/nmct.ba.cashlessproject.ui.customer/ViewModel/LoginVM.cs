@@ -170,7 +170,7 @@ namespace nmct.ba.cashlessproject.ui.customer.ViewModel
                 }
                 else
                 {
-                    MakeErrorLog("Er liep iets fout met het ophalen van de klanten.", mname, "CheckIfCustomerExists");
+                    MakeErrorLog("something went wrong with getting the customers out of the db.", mname, "CheckIfCustomerExists");
                 }
 
                 Customers inDB = null;
@@ -235,7 +235,7 @@ namespace nmct.ba.cashlessproject.ui.customer.ViewModel
         private void MakeErrorLog(string message, string classStackTrace, string methodStackTrace)
         {
             Errorlog errorLog = new Errorlog();
-            errorLog.RegisterID = 0;
+            errorLog.RegisterID = 1;
             errorLog.Timestamp = DateTimeToUnixTimeStamp(DateTime.Now);
             errorLog.Message = message;
             errorLog.StackTrace = "Class: " + classStackTrace + " Method: " + methodStackTrace;

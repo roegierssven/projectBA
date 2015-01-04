@@ -1,7 +1,6 @@
 ﻿using System;
 using nmct.ba.cashlessproject.api.Models;
 using nmct.ba.cashlessproject.model;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -14,7 +13,7 @@ namespace nmct.ba.cashlessproject.api.Controllers
     {
         public HttpResponseMessage Post(Errorlog e)
         {
-            ErrorlogDA.AddErrorlog(e);
+            ErrorlogDA.InsertErrorlog(e);
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
         

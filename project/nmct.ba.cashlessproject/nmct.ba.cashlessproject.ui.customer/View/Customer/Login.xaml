@@ -32,8 +32,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="4">Please put in your card</Label>
-        <Label Grid.Row="1" Grid.ColumnSpan="4" Grid.Column="1">When you're new, you'll get registrated</Label>
+        <Label Grid.Row="1" Grid.Column="1" Margin="0,6,0,45">Please put in your card</Label>
+        <Label Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1" Margin="0,40,120,10">When you're new, you'll get registrated</Label>
         <Image Grid.RowSpan="3" Grid.Row="2" Grid.Column="1" Source="{Binding Customer.Picture, Converter={StaticResource StringToImageConverter}}"/>
         <Label Grid.Row="2" Grid.Column="2">NAME:</Label>
         <TextBlock Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Text="{Binding LastName}"/>

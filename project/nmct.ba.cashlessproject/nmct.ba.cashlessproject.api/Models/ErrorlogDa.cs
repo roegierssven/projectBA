@@ -10,7 +10,7 @@ namespace nmct.ba.cashlessproject.api.Models
 {
     public class ErrorlogDA
     {
-        public static void AddErrorlog(Errorlog e)
+        public static void InsertErrorlog(Errorlog e)
         {
             string sql = "INSERT INTO Errorlog VALUES(@RegisterID, @Timestamp, @Message, @StackTrace)";
             DbParameter par1 = Database.AddParameter("ConnectionString", "@RegisterID", e.RegisterID);

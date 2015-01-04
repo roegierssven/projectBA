@@ -38,9 +38,5 @@ namespace nmct.ba.cashlessproject.model
             get { return _stackTrace; }
             set { _stackTrace = value; }
         }
-        
-        
-        
-        
     }
 }
